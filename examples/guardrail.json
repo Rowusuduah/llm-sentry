@@ -1,0 +1,16 @@
+{
+    "pipeline_name": "my_rag_app",
+    "checks": ["rag", "agents"],
+    "threshold": 0.7,
+    "rag_queries": [
+        ["What is the return policy?", [["Returns accepted within 30 days of purchase", 0.95]], "Our return policy allows returns within 30 days."],
+        ["How do I contact support?", [["Email support@example.com or call 1-800-HELP", 0.9]], "You can email support@example.com or call 1-800-HELP."],
+        ["What are shipping costs?", [["Random unrelated content about cooking", 0.1]], "I'm not sure about shipping costs."]
+    ],
+    "agent_task": "answer customer questions",
+    "agent_actions": [
+        ["search_knowledge_base", "found 5 relevant articles"],
+        ["generate_response", "response generated successfully"],
+        ["verify_response", "response verified against sources"]
+    ]
+}

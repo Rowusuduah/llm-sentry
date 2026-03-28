@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "llm-sentry"
-version = "0.1.0"
+version = "0.2.0"
 description = "Unified AI reliability platform. One install, 12 diagnostic engines. Continuous monitoring, fault diagnosis, and compliance for LLM pipelines."
 readme = "README.md"
 license = { text = "MIT" }
@@ -47,6 +47,7 @@ dev = ["pytest>=7.0", "pytest-cov", "ruff"]
 
 [project.scripts]
 llm-sentry = "llmguardrail:_cli_main"
+llm-sentry-gate = "llmguardrail.ci_gate:main"
 
 [project.urls]
 Homepage = "https://github.com/Rowusuduah/llm-sentry"
