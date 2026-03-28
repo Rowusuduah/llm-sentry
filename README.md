@@ -5,7 +5,7 @@
 Stop guessing why your LLM app is broken. `llmguardrail` runs 12 specialized diagnostic engines across your entire AI stack — RAG pipelines, agent loops, chain-of-thought reasoning, prompt stability, model swaps, and output drift — in a single scan.
 
 ```bash
-pip install llmguardrail
+pip install llm-sentry
 ```
 
 ## The Problem

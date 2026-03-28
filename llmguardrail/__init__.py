@@ -3,7 +3,7 @@
 One install. 12 diagnostic engines. Continuous monitoring, fault diagnosis,
 and compliance for LLM pipelines.
 
-    pip install llmguardrail
+    pip install llm-sentry
 
 Quick start:
 
